@@ -39,7 +39,7 @@ def tool():
 	print("")
 	time.sleep(1)
 	username = raw_input("[!] Tool Username : ")
-	if username =="(sufyan)":
+	if username =="(SUFYAN)":
 		print("")
 		time.sleep(1)
 		print("\033[1;92mTool Username is correct").center(50)
