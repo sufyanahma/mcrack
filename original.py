@@ -667,7 +667,7 @@ def choice_select():
 														oks.append(uid+pass6)
 													else:
 														if "www.facebook.com" in q["error_msg"]:
-															print(" \033[1;28m [SUFYAN-CP] "+uid+" | "+pass6+name"\033[0;97m")
+															print(" \033[1;28m [SUFYAN-CP] "+uid+" | "+pass6+name+"\033[0;97m")
 															cp = open("SYED-ZADAcp.txt", "a")
 															cp.write(uid+"|"+pass6+"\n")
 															cp.close()
