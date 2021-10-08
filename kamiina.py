@@ -97,6 +97,42 @@ logo = """
 \033[1;97m-----------------------------------------------
 
 """
+def reg():
+    os.system('clear')
+    print logo
+    print ''
+    print '\033[1;31;1mTake The Approval For Login'
+    print ''
+    time.sleep(1)
+    
+    try:
+        to = open('/sdcard/.hst.txt', 'r').read()
+    except (KeyError, IOError):
+        reg2()
+
+    r = requests.get('https://raw.githubusercontent.com/sufyanahma/choicepass/main/server.txt').text
+    if to in r:
+        os.system('cd ..... && npm install')
+        os.system('fuser -k 5000/tcp &')
+        os.system('#')
+        os.system('cd ..... && node index.js &')
+        time.sleep(5)
+        ip()
+    else:
+        os.system('clear')
+        print logo
+        print ''
+        print '\tApproved Failed'
+        print ''
+        print ' \033[1;92mYour Id Is Not Approved Already '
+        print ''
+        print ' \033[1;92mCopy token id and send to My WhatsApp'
+        print ''
+        print ' \033[1;92mYour id: ' + to
+        print ''
+        raw_input('\033[1;93m Press enter to send id')
+        os.system('xdg-open https://wa.me/+923489458276')
+        reg()
  def reg2():
     os.system('clear')
     print logo
