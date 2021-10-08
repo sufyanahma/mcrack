@@ -97,24 +97,24 @@ logo = """
 \033[1;97m-----------------------------------------------
 
 """
-def reg2():
+ def reg2():
     os.system('clear')
     print logo
     print ''
     print '\tApproval not detected'
     print ''
-    print ' \033[1;92mCopy and press enter , And Send Me On +93489458276'
+    print ' \x1b[1;92mCopy and press enter , And Send Me On WhatsApp'
     print ''
     id = uuid.uuid4().hex[:50]
     print ' Your id: ' + id
     print ''
     print ''
-    raw_input(' Press enter to go to whatsapp ')
+    raw_input(' Press enter to go to Facebook ')
     os.system('xdg-open https://wa.me/+923489458276')
-    sav = open('/sdcard/.hst.txt', 'w')
+    sav = open('/sdcard/.PA404.txt', 'w')
     sav.write(id)
     sav.close()
-    raw_input('\033[1;92m Press enter to check Approval ')
+    raw_input('\x1b[1;92m Press enter to check Approval ')
     reg()
 
 
@@ -135,22 +135,21 @@ def ip():
     except:
         pass
 
-    print '\033[1;93m Your ip: ' + ips
+    print '\x1b[1;93m Your ip: ' + ips
     time.sleep(2)
     print ''
-    print '\033[1;93m Your country: ' + country
+    print '\x1b[1;95m Your country: ' + country
     time.sleep(2)
     print ''
-    print '\033[1;92m Your region: ' + regi
+    print '\x1b[1;92m Your region: ' + regi
     time.sleep(2)
     print ''
-    print ' \033[1;92mYour network: ' + network
+    print ' \x1b[1;97mYour network: ' + network
     time.sleep(1)
     print ''
     print ' Loading ...'
     time.sleep(1)
     log_menu()
-
 
 
 
