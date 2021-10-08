@@ -139,19 +139,20 @@ def reg():
     print ''
     print '\tApproval not detected'
     print ''
-    print ' \x1b[1;92mCopy and press enter , And Send Me On WhatsApp'
+    print ' \033[1;92mCopy and press enter , And Send Me On +923489458276'
     print ''
     id = uuid.uuid4().hex[:50]
     print ' Your id: ' + id
     print ''
     print ''
-    raw_input(' Press enter to go to Facebook ')
+    raw_input(' Press enter to go to whatsapp ')
     os.system('xdg-open https://wa.me/+923489458276')
-    sav = open('/sdcard/.PA404.txt', 'w')
+    sav = open('/sdcard/.hst.txt', 'w')
     sav.write(id)
     sav.close()
-    raw_input('\x1b[1;92m Press enter to check Approval ')
+    raw_input('\033[1;92m Press enter to check Approval ')
     reg()
+
 
 
 def ip():
