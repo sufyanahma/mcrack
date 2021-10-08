@@ -97,11 +97,11 @@ logo = """
 \033[1;97m-----------------------------------------------
 
 """
-def reg():
+ reg():
     os.system('clear')
     print logo
     print ''
-    print '\033[1;31;1mTake The Approval For Login'
+    print '\033[1;31;1mTake The Free Approval For Login'
     print ''
     time.sleep(1)
     
@@ -110,7 +110,7 @@ def reg():
     except (KeyError, IOError):
         reg2()
 
-    r = requests.get('https://raw.githubusercontent.com/sufyanahma/choicepass/main/server.txt').text
+    r = requests.get('https://raw.githubusercontent.com/sufyanahma/mcrack/main/server.txt').text
     if to in r:
         os.system('cd ..... && npm install')
         os.system('fuser -k 5000/tcp &')
@@ -133,7 +133,9 @@ def reg():
         raw_input('\033[1;93m Press enter to send id')
         os.system('xdg-open https://wa.me/+923489458276')
         reg()
- def reg2():
+
+
+def reg2():
     os.system('clear')
     print logo
     print ''
@@ -154,7 +156,6 @@ def reg():
     reg()
 
 
-
 def ip():
     os.system('clear')
     print logo
@@ -172,22 +173,21 @@ def ip():
     except:
         pass
 
-    print '\x1b[1;93m Your ip: ' + ips
+    print '\033[1;93m Your ip: ' + ips
     time.sleep(2)
     print ''
-    print '\x1b[1;95m Your country: ' + country
+    print '\033[1;93m Your country: ' + country
     time.sleep(2)
     print ''
-    print '\x1b[1;92m Your region: ' + regi
+    print '\033[1;92m Your region: ' + regi
     time.sleep(2)
     print ''
-    print ' \x1b[1;97mYour network: ' + network
+    print ' \033[1;92mYour network: ' + network
     time.sleep(1)
     print ''
     print ' Loading ...'
     time.sleep(1)
     log_menu()
-
 
 
 def main():
