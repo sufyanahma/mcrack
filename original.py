@@ -44,7 +44,6 @@ def main():
 	print("\x1b[1;93m[1]\x1b[1;92m B-API Method \x1b[1;93m[Best]\n")
 	print("\x1b[1;93m[2]\x1b[1;91m Start Cloning❤️\n")
 	print("")
-	os.system('xdg-open https://www.facebook.com/Sufyan.shabqadry')
 	log_sel()
 def log_sel():
 	select = raw_input("\033[1;92mChoose option: \033[0;93m")
